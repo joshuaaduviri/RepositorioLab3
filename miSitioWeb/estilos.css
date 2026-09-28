@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: #f4f6f8;
+}
+
+h1 {
+    color: #1f4e79;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 420px;
+}
+
+input,
+button {
+    padding: 10px;
+}gi
+
+button {
+    padding: 10px 18px;
+    background: #1f4e79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
