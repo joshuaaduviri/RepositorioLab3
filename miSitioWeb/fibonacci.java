@@ -1,20 +1,12 @@
 public class fibonacci {
-
-    // Algoritmo recursivo para la serie de Fibonacci
-    public static int fibonacciRecursivo(int n) {
-        if (n <= 1) {
-            return n;
-        }
-        return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
-    }
-
     public static void main(String[] args) {
-        int limite = 10; 
-        System.out.println("Serie de Fibonacci (Algoritmo Recursivo) para " + limite + " términos:");
-        
-        for (int i = 0; i < limite; i++) {
-            System.out.print(fibonacciRecursivo(i) + " ");
+        int n = 10, t1 = 0, t2 = 1;
+        System.out.print("Serie Fibonacci: ");
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(t1 + " ");
+            int sum = t1 + t2;
+            t1 = t2;
+            t2 = sum;
         }
-        System.out.println();
     }
 }
